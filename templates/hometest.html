@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* General Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container Styles */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    /* Form Styles */
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    /* Label Styles */
+    label {
+      font-weight: bold;
+    }
+
+    /* Select Styles */
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Button Styles */
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Rate Yourself...</h2>
+  <div class="container">
+    <form action="/predict" method="post">
+      <label for="Database Fundamentals">Database Fundamentals:</label>
+      <select id="Database Fundamentals" name="Database Fundamentals">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Computer Architecture">Computer Architecture:</label>
+      <select id="Computer Architecture" name="Computer Architecture">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Distributed Computing Systems">Distributed Computing Systems:</label>
+      <select id="Distributed Computing Systems" name="Distributed Computing Systems">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Cyber Security">Cyber Security:</label>
+      <select id="Cyber Security" name="Cyber Security">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Computer Networking">Computer Networking:</label>
+      <select id="Computer Networking" name="Computer Networking">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Software Development">Software Development:</label>
+      <select id="Software Development" name="Software Development">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Programming Skills">Programming Skills:</label>
+      <select id="Programming Skills" name="Programming Skills">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Project Management">Project Management:</label>
+      <select id="Project Management" name="Project Management">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Computer Forensics Fundamentals">Computer Forensics Fundamentals:</label>
+      <select id="Computer Forensics Fundamentals" name="Computer Forensics Fundamentals">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Technical Communication skills">Technical Communication skills:</label>
+      <select id="Technical Communication skills" name="Technical Communication skills">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="AI ML">AI ML:</label>
+      <select id="AI ML" name="AI ML">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Software Engineering">Software Engineering:</label>
+      <select id="Software Engineering" name="Software Engineering">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Business Analysis">Business Analysis:</label>
+      <select id="Business Analysis" name="Business Analysis">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Communication skills">Communication skills:</label>
+      <select id="Communication skills" name="Communication skills">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Data Science">Data Science:</label>
+      <select id="Data Science" name="Data Science">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Troubleshooting skills">Troubleshooting skills:</label>
+      <select id="Troubleshooting skills" name="Troubleshooting skills">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+  
+      <label for="Graphics Designing">Graphics Designing:</label>
+      <select id="Graphics Designing" name="Graphics Designing">
+        <option value="0">choose your option</option>
+        <option value="1">Not interested</option>
+        <option value="2">Poor</option>
+        <option value="3">Beginner</option>
+        <option value="5">Average</option>
+        <option value="6">Intermediate</option>
+        <option value="7">Excellent</option>
+        <option value="9">Professional</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br>
+      <button type="submit">Discover Yourself</button>
+    </form>
+  </div>
+  
+</body>
+</html>

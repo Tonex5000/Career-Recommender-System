@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            list-style-type: decimal;
+            padding-left: 20px;
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 5px;
+            list-style: none;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Your Recommended Career Roles are:</h2>
+    <div style="text-align: center; margin-top: 50px">
+        <!-- <div>The below career roles are areas :</div> -->
+        <ul>
+            {% for role, probability in predicted_roles %}
+            <h3><li>{{ role }}</li></h3>
+            {% endfor %}
+        </ul>
+        <p><a href="{{url_for ('blog')}}">Click here for more information</a></p>
+    </div>
+    
+</body>
+</html>
+                                                                                                                                                                    
